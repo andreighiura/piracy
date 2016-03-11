@@ -46,17 +46,18 @@ return [
 
     'connections' => [
   'mysql' => [
-            'driver'    => 'mysql',
-            'host'      => '127.11.225.130',
-            'database'  => 'test',
-            'username'  => 'adminqAY9uHu',
-            'password'  => 'zzwWB7j9nZ_t'
-            ,
-            'charset'   => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
-            'strict'    => false,
-            'engine'    => null,
+             'driver'    => 'mysql',
+             'host'      =>  env('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST')),
+             'database'  =>  env('DB_DATABASE', getenv('OPENSHIFT_APP_NAME')),
+             'username'  => env('DB_USERNAME', getenv('OPENSHIFT_MYSQL_DB_USERNAME')),
+             'password'  =>  env('DB_PASSWORD', getenv('OPENSHIFT_MYSQL_DB_PASSWORD')),
+             'port'      =>  env('DB_PORT', getenv('OPENSHIFT_MYSQL_DB_PORT')),
+             ,
+             'charset'   =>  'utf8',
+             'collation' =>  'utf8_unicode_ci',
+             'prefix'    =>  '',
+             'strict'    =>  false,
+             'engine'    =>  null,
         ],
        
 /*
