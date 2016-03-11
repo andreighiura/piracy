@@ -1,0 +1,40 @@
+<div class="modal-content">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                
+                                <form novalidate class="simple-form">
+                                    
+                                    <input type="text" class="form-control" ng-model="user.id" id="idFL" style="display:none;">
+                                    
+                                    <label >Nume:</label>
+                                    <input type="text"  class="form-control" ng-model="user.name"  id="nameFL" placeholder="Enter name...">
+                                    <label >Username:</label>
+                                    <input type="text"  class="form-control" ng-model="user.username"  id="usernamenameFL" placeholder="Enter username...">
+
+                                    <label >Password:</label>
+                                    <input type="password"  class="form-control" ng-model="user.password"  id="usernamenameFL" placeholder="Enter password...">
+
+                                    <label >Adresă email:</label>
+                                    <input type="email" class="form-control" ng-model="user.email" id="emailFL" placeholder="Enter email...">
+                                   
+                                    <label >ID steam:</label>
+                                    <input type="text" class="form-control" ng-model="user.steam" id="steamFL" placeholder="example1234">
+                                 
+                                    <label >Nume invocator (LoL):</label>
+                                    <input type="text" class="form-control" ng-model="user.lol" id="lolFL" placeholder="example1234">
+                                  
+                                    <label >battle.net tag:</label>
+                                    <input type="text" class="form-control" ng-model="user.hs" id="hsFL" placeholder="example#1234">
+                                    <button ng-click="update(user)" data-dismiss="modal" class="btn btn-info" >Submit</button>
+                                 
+                                </form>
+                                <pre>{{user|json}}</pre>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

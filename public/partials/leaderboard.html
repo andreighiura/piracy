@@ -1,0 +1,45 @@
+<div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body table-responsive">
+                                
+                                
+                                <table class="table table-hover table-bordered right-text">
+                                    <thread>
+                                        <tr>
+                                            <th>
+                                            Name</th>
+                                            <th>
+                                            Pct lol</th>
+                                            <th>
+                                            Pct HS</th>
+                                            <th>
+                                            Pct Steam</th>
+                                            <th>
+                                            Pct hen</th>
+                                            
+                                        </tr>
+                                    </thread>
+                                    <tr ng-repeat="User in Users">
+                                        <td>{{User.name}}</td>
+                                        <td>{{User.lol_pct}}</td>
+                                        <td>{{User.battlenet_pct}}</td>
+                                        <td>{{User.steam_pct}}</td>
+                                        <td>{{User.gen_pct}}</td>
+                                    </tr>
+                                    
+                                </table>
+                                
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
