@@ -47,7 +47,7 @@ return [
     'connections' => [
   'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'https://test-piratdecluj.rhcloud.com/',
+            'host'      => '127.11.225.130',
             'database'  => 'test',
             'username'  => 'adminqAY9uHu',
             'password'  => 'zzwWB7j9nZ_t'
