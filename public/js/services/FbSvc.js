@@ -4,7 +4,7 @@ angular.module('myApp.services')
 
 this.setUser=function(res){
   $rootScope.$apply(function() { 
-      //console.log(res)
+      console.log(res)
       $rootScope.user =  res; 
 
     });
@@ -26,10 +26,11 @@ this.getUserInfo = function() {
 this.watchLoginChange = function() {
 
   var _self = this;
+console.log('nici macar')
   FB.Event.subscribe('auth.authResponseChange', function(res) {
 
     if (res.status === 'connected') {
-      ///console.log('signed')
+      console.log('signed')
       /* 
        The user is already logged, 
        is possible retrieve his personal info
@@ -45,7 +46,7 @@ this.watchLoginChange = function() {
 
     } 
     else {
-//console.log('not signed')
+console.log('not signed')
       /*
        The user is not logged to the app, or into Facebook:
        destroy the session on the server.

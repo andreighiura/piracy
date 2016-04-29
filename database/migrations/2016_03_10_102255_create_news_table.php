@@ -16,8 +16,6 @@ class CreateNewsTable extends Migration
             $table->string('title');
             $table->string('img');
             $table->string('desc');
-            $table->string('url');
-
            
         });
     }

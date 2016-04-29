@@ -15,8 +15,6 @@ angular.module('myApp.services',[])
             data: $.param(data)
         })
 		}
-
-    
 } 
 
 	

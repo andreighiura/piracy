@@ -4,7 +4,7 @@
         <link rel="icon" type="img/ico" href="favicon.ico">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta fname="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="andreighiura@outlook.com">
         <title>PIRACY-Ahoy League</title>
@@ -26,12 +26,9 @@
        
         <script src="/laravel/piracy/public/js/controllers/UserCtrl.js"></script>
          <script src="/laravel/piracy/public/js/controllers/NewsCtrl.js"></script>
-         <script src="/laravel/piracy/public/js/controllers/QuestCtrl.js"></script>
          <script src="/laravel/piracy/public/js/controllers/ContactCtrl.js"></script>
         <script src="/laravel/piracy/public/js/services/UserSvc.js"></script>
         <script src="/laravel/piracy/public/js/services/NewsSvc.js"></script>
-        <script src="/laravel/piracy/public/js/services/imgurSvc.js"></script>
-        <script src="/laravel/piracy/public/js/services/QuestSvc.js"></script>
 <script src="/laravel/piracy/public/js/services/ContactSvc.js"></script>
         <script src="/laravel/piracy/public/js/myApp.js"></script>
         <script src="/laravel/piracy/public/js/services/FbSvc.js"></script>
@@ -50,7 +47,7 @@
         <!-- Footer -->
         <footer class="text-center" ng-include="'partials/footer.html'" scope="" onload=""></footer>
         <!-- Portfolio Modals -->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" ng-include="'partials/modalHS.html'" scope="" onload="" ng-controller="QuestCtrl"></div>
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" ng-include="'partials/modalHS.html'" scope="" onload=""></div>
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" ng-include="'partials/modalLOL.html'" scope="" onload=""></div>
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" ng-include="'partials/modalCSGO.html'" scope="" onload=""></div>
         <div class="portfolio-modal modal fade" data-keyboard="false" data-backdrop="static" id="firstLogin" tabindex="-1" role="dialog" aria-hidden="true" ng-include="'partials/formFL.html'" scope="" onload=""></div>

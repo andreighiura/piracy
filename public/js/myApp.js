@@ -1,9 +1,8 @@
 var myApp=angular.module('myApp', ['myApp.controllers','myApp.services'])
 
-myApp.run(['$rootScope', '$window','FbSvc',
-  function($rootScope, $window,FbSvc) {
-
- 
+myApp.run(['$rootScope', '$window','FbSvc','NewsSvc' ,
+  function($rootScope, $window,FbSvc,NewsSvc) {
+  
   
   $rootScope.user = {};
 
@@ -38,7 +37,7 @@ myApp.run(['$rootScope', '$window','FbSvc',
 
       xfbml: true 
     });
-
+  NewsSvc.News();
   FbSvc.watchLoginChange();
 
   };
