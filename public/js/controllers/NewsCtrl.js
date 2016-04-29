@@ -1,8 +1,6 @@
-
 angular.module('myApp.controllers')
-.controller('NewsCtrl', function($scope, $http,$rootScope,FbSvc,NewsSvc) {
+	.controller('NewsCtrl', function($scope, NewsSvc) {
 
-$scope.News = NewsSvc.News()
-console.log($scope.News);
-//$scope.news1.title=$scope.News[0].title;
-})
+		$scope.News = NewsSvc.News()
+		//console.log($scope.News)
+	})

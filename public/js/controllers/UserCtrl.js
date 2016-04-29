@@ -25,7 +25,7 @@ angular.module('myApp.controllers', ['myApp.services'])
                  }
             return response.data
         })
-console.log($scope.userCurent.name)
+    console.log($scope.userCurent.name)
     }
 
 
@@ -88,6 +88,7 @@ console.log($scope.userCurent.name)
 
     function storeImg() {
         $scope.img = $rootScope.user.picture.data.url;
+        console.log($rootScope.user);
         document.getElementById("profilePic1").style.display = "block";
     }
 

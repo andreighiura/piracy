@@ -16,7 +16,7 @@ class UserController extends Controller
 public function index()
 {
 // get all the nerds
-return User::all();
+return User::select('name','lol_pct','battlenet_pct','steam_pct','gen_pct')->get();
 }
 /**
 * Show the form for creating a new resource.

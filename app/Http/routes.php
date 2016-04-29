@@ -12,14 +12,17 @@
 */
 
 Route::post('contactapppost/', 'ContactController@store');
-
 Route::get('newsapp','NewsController@index');
-
 Route::post('userapppost/', 'UserController@store');
-
 Route::get('userapp/{id}','UserController@show');
 Route::get('userapp','UserController@index');
+Route::get('questapp/{id}','QuestController@index');
+Route::post('questapppost/','QuestController@update');
+Route::get('/adm1n', function () {
 
+   return view('admin');
+
+});
 Route::get('/', function () {
 
    return view('welcome');

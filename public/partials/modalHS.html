@@ -12,6 +12,39 @@
                     <img src="img/portfolio/hsLarge.png" class="img-responsive img-centered" alt="">
                     <p id="hs_questlog">
                     Please login using Facebook to start!</p>
+                      <table class="table table-hover table-bordered right-text">
+                                    <thread>
+                                        <tr>
+                                            <th>
+                                            Points</th>
+                                            <th>
+                                            Description</th>
+                                            <th>
+                                            Screen shot
+                                            </th>
+                                            <th>
+                                            Upload
+                                            </th>
+                                            
+                                        </tr>
+                                    </thread>
+                                    <tr ng-repeat="Q in QuestList | filter: {game: 'HS'}">
+                                        <td>{{Q.pct}}</td>
+                                        <td>{{Q.desc}}</td>
+                                        <td>
+
+                                        <input type='file' ng-file-select onchange="angular.element(this).scope().imageUpload(this,{{Q.id}})"/></td>
+                                        <td>
+                                        <button ng-click="addSs(Q.id)">Done!</button>
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                </table>
+                                
+                    
+                    <pre>{{ssList}}</pre></br>
+                    {{image}}
                     </br>
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
