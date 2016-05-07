@@ -1,22 +1,56 @@
-           <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
+<div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                    
+                    <img src="img/portfolio/csgoLarge.png" class="img-responsive img-centered" alt="">
+                    <p id="csgo_questlog">
+                    Please login using Facebook to start!{{image}}</p>
+                    </br>
+                    <table ng-show="QuestList" class="table table-hover table-bordered right-text" id="csgo_questTable">
+                        <thread>
+                            <tr>
+                                <th>
+                                    Points
+                                </th>
+                                <th>
+                                    Description
+                                </th>
+                                <th>
+                                    Screenshot
+                                </th>
+                                <th>
+                                    Upload
+                                </th>
                                 
-                                <img src="img/portfolio/csgoLarge.png" class="img-responsive img-centered" alt="">
-                                <p id="csgo_questlog">
-                                Please login using Facebook to start!</p>
-                                </br>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
+                            </tr>
+                        </thread>
+                        <tr ng-repeat="Q in QuestList | filter: {game: 'CSGO'}">
+                            <td>{{Q.pct}}</td>
+                            <td>{{Q.desc}}</td>
+                            <td>
+                                <input type="file" name="file" id="file" class="inputfile" ng-file-select onchange="angular.element(this).scope().imageUpload(this,{{Q.id}})"/>
+                                <label for="file">Choose a file</label>
+                                </td>
+
+                                <td>
+                                    <button ng-show="uploaded(Q.id)" ng-click="addSs(Q.id)">Done!</button>
+                                </td>
+                            </tr>
+                            
+                            
+                        </table>
+                        
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>

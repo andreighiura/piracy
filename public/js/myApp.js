@@ -1,12 +1,13 @@
 var myApp=angular.module('myApp', ['myApp.controllers','myApp.services'])
 
-myApp.run(['$rootScope', '$window','FbSvc','NewsSvc' ,
-  function($rootScope, $window,FbSvc,NewsSvc) {
-  
+myApp.run(['$rootScope', '$window','FbSvc',
+  function($rootScope, $window,FbSvc) {
+
+ 
   
   $rootScope.user = {};
 
-  $window.fbAsyncInit = function() {
+  window.fbAsyncInit = function() {
     // Executed when the SDK is loaded
 
     FB.init({ 
@@ -37,7 +38,7 @@ myApp.run(['$rootScope', '$window','FbSvc','NewsSvc' ,
 
       xfbml: true 
     });
-  NewsSvc.News();
+
   FbSvc.watchLoginChange();
 
   };

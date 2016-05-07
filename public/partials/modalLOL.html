@@ -12,8 +12,39 @@
                                 
                                 <img src="img/portfolio/lolLarge.png" class="img-responsive img-centered" alt="">
                                 <p id="lol_questlog">
-                                Please login using Facebook to start!</p>
+                                Please login using Facebook to start!{{image}}</p>
                                 </br>
+                                <table ng-show="QuestList" class="table table-hover table-bordered right-text" id="lol_questTable">
+                        <thread>
+                            <tr>
+                                <th>
+                                    Points
+                                </th>
+                                <th>
+                                    Description
+                                </th>
+                                <th>
+                                    Screenshot
+                                </th>
+                                <th>
+                                    Upload
+                                </th>
+                                
+                            </tr>
+                        </thread>
+                        <tr ng-repeat="Q in QuestList | filter: {game: 'LOL'}">
+                            <td>{{Q.pct}}</td>
+                            <td>{{Q.desc}}</td>
+                            <td>
+                                <input type='file' ng-file-select onchange="angular.element(this).scope().imageUpload(this,{{Q.id}})"/></td>
+                                <td>
+                                    <button ng-show="uploaded(Q.id)" ng-click="addSs(Q.id)">Done!</button>
+                                </td>
+                            </tr>
+                            
+                            
+                        </table>
+                        
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>

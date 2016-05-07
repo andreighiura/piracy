@@ -4,7 +4,7 @@ angular.module('myApp.services',[])
 		return $http.get('userapp').then(function(response) {
         return response.data
     })
-	},
+	}, 
 	this.addUser= function(data){
 		      $http({
             method: 'POST',
@@ -15,6 +15,8 @@ angular.module('myApp.services',[])
             data: $.param(data)
         })
 		}
+
+    
 } 
 
 	

@@ -2,7 +2,15 @@
  * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ top=1A538D
+ section=2371C0
  */
+
+:root {
+    --details: #6296CA;
+    --sections:rgba(35,101,192,0.3);
+
+}
 
 body {
     overflow-x: hidden;
@@ -39,10 +47,10 @@ margin: 0 15px 5px 0;
 	-webkit-box-shadow: 0 0 50px 3px #FFF inset;
 	-moz-box-shadow: 0 0 50px 3px #FFF inset;
 	box-shadow: 0 0 50px 3px #FFF inset;
-	border:1px solid #6296CA;
+	border:1px solid var(--details);
 	height:170px;
 	vertical-align: middle;
-	display:none;
+	
 }
 
 
@@ -64,6 +72,11 @@ a.active {
     color: #444;
 }
 
+.quest{
+    color:#000;
+}
+
+
 h1,
 h2,
 h3,
@@ -73,46 +86,49 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+
 }
+
 
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 1500x;
-    border: 0;
+    border: 2px;
     border-top: solid 2px;
+
     text-align: center;
 }
 
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f11b";
-    display: inline-block;
+    
     position: relative;
-    top: -.8em;
+    top: -1.3em;
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
+
 }
 
 hr.star-light {
-    border-color: #6296CA;
+    border-color: #;
 }
 
 hr.star-light:after {
     color: #fff;
-    background-color: #6296CA;
+    ;
 }
 
 hr.star-primary {
-    border-color: #6296CA;
+    border-color: #fff;
 }
 
 hr.star-primary:after {
-    color: #6296CA;
-    background-color: #fff;
-}
+    color: #fff;
+   }
 
 .img-centered {
     margin: 0 auto;
@@ -164,7 +180,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 10px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -178,7 +194,13 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+      
+         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+          background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+         background-repeat: repeat-x;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+        padding: 5px 0;
+       
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -210,7 +232,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 section h2 {
@@ -220,7 +242,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #2371C0;
+    background: var(--sections);
 }
 
 section.success a,
@@ -229,7 +251,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2371C0;
+    color: var(--sections);
 }
 
 @media(max-width:767px) {
@@ -256,10 +278,10 @@ section.success a.active {
 
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    background: rgba(255,255,255,.5);
+    background: rgba(35,101,192,0.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -382,17 +404,17 @@ footer h3 {
 }
 
 footer .footer-above {
-    padding-top: 50px;
-    background-color: #2371C0;
+    padding-top: 10px;
+    background-color: var(--sections);
 }
 
 footer .footer-col {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #1C538A;
+    background-color: rgba(35,101,192,0.7);
 }
 
 .btn-social {
@@ -410,6 +432,8 @@ footer .footer-below {
 .btn:active,
 .btn.active {
     outline: 0;
+
+
 }
 
 .scroll-top {
@@ -498,11 +522,84 @@ footer .footer-below {
 }
 
 .navbar-default {
-    background-color: #1A538D;
-    border-color: #FFF;
+    background-color: rgba(0,0,0,0);
+    border-color: none;
 }
 .navbar-default .navbar-nav > li > a:hover, 
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: #FFFFFF;
-    color: #2371C0;
+
+    background-color: #000;
+    color: var(--sections);
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor;
+}
+
+.carousel-img{
+height:100%;
+width:100%;
+margin:0;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+.full {
+    background: url('../img/background.png') repeat center center fixed;
+    
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #000;
+
+}
+.transparent{
+    background: transparent;
+}
+
+.slim{
+    font-weight: 100;
+    text-decoration: none;
+     text-transform: lowercase;
+}
+
+.smallcaps{
+      font-variant: small-caps;
 }

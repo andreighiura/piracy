@@ -10,8 +10,44 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <div class="modal-body">
                     <img src="img/portfolio/hsLarge.png" class="img-responsive img-centered" alt="">
-                    <p id="hs_questlog">
-                    Please login using Facebook to start!</p>
+                    <p ng-hide="logged" id="hs_questlog">
+                    Please login using Facebook to start!{{image}}</p>
+                    <table ng-show="logged" class="table table-hover table-bordered right-text" id="hs_questTable"  >
+                        <thread>
+                            <tr>
+                                <th class="col-sm-1">
+                                    <h6>Points</h6>
+                                </th>
+                                <th class="col-sm-6">
+                                   <h6> Description</h6>
+                                </th>
+                                <th class="col-sm-3">
+                                   <h6> Screenshot</h6>
+                                </th>
+                                <th class="col-sm-2">
+                                   <h6> Upload</h6>
+                                </th>
+                            </tr>
+                        </thread>
+                        <tr ng-repeat="Q in QuestList | filter: {game: 'HS'}" ng-hide="Q.imgur_url">
+                            <td><h4 class="quest">{{Q.pct}}</h4></td>
+                            <td><h5 class="quest">{{Q.desc}}</h5></td>
+                            <td>
+                                <span class="file-input btn btn-info btn-file">
+                                    <h6>Browse&hellip;</h6> <input type="file" ng-file-select onchange="angular.element(this).scope().imageUpload(this,{{Q.id}})">
+                                </span>
+                            </td>
+                            <td>
+                                 <span class="file-input btn btn-info btn-file" ng-show="uploaded(Q.id)" ng-click="addSs(Q.id)">
+                                    Done!
+                                </span>
+                               
+                            </td>
+                        </tr>
+                        
+                        
+                    </table>
+                    
                     </br>
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>

@@ -1,0 +1,38 @@
+<div class="container">
+    
+      <table class="table table-hover table-bordered right-text" >
+                        <thread>
+                            <tr>
+                                <th>
+                                    Points
+                                </th>
+                                <th>
+                                    Description
+                                </th>
+                                <th>
+                                    Screenshot
+                                </th>
+                                <th>
+                                    User
+                                </th>
+                                <th>
+                                Game
+                                </th>
+                                //TODO admin comtroller
+                            </tr>
+                        </thread>
+                        <tr ng-repeat="Q in QuestListAll">
+                            <td>{{Q.pct}}</td>
+                            <td>{{Q.desc}}</td>
+                            <td ng-show="Q.imgur_url"><a href="https://imgur.com/{{Q.imgur_url}}">link text</a></td>
+                            <td ng-hide="Q.imgur_url">no ss</td>
+                            <td>{{Q.user_id}}</td>
+                            <td>{{Q.game}}</td>
+                           
+                            </tr>
+                            
+                            
+                        </table>
+    
+    
+</div>

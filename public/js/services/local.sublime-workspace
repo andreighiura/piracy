@@ -1,0 +1,361 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"image",
+				"imageUpload"
+			],
+			[
+				"imgur",
+				"imgurOptions"
+			],
+			[
+				"Q",
+				"Quests"
+			],
+			[
+				"Quest",
+				"QuestSvc"
+			],
+			[
+				"p",
+				"password"
+			],
+			[
+				"Contact",
+				"ContactSvc"
+			],
+			[
+				"User",
+				"UserSvc"
+			],
+			[
+				"ng-i",
+				"ng-include	AngularJS"
+			],
+			[
+				"$routeP",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"get",
+				"getUserInfo"
+			],
+			[
+				"use",
+				"userCurent"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"cons",
+				"console"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 288.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/services/imgurSvc.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Controllers/Controller.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/storage/logs/laravel.log",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/.env",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/seeds/DatabaseSeeder.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/config/database.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/modalHS.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/myApp.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/controllers/QuestCtrl.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/News.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Quest.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Kernel.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/routes.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Controllers/UserController.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Controllers/QuestController.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/services/UserSvc.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/services/QuestSvc.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_04_25_134526_create_quests_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/welcome.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/about.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/services/FbSvc.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/services/NewsSvc.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/controllers/NewsCtrl.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/controllers/imgurSvc.js",
+		"/C/Users/Andrei Ghiura/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/Andrei Ghiura/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Andrei Ghiura/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_03_10_102255_create_news_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/carousel.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Quests.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/admin.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/controllers/UserCtrl.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/controllers/ModalHS.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/User.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_03_10_112341_create_contact_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_24_141249_create_users_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/formFL.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/controllers/ContactCtrl.js",
+		"/C/Users/Andrei Ghiura/Desktop/favicon.ico",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Controllers/ContactController.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/services/ContactSvc.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Contact.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/contact.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/footer.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Controllers/NewsController.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/login.html",
+		"/C/Users/Andrei Ghiura/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/README.md",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/channel.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/facebook.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/UserSvc.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/srvAuth.js",
+		"/C/Users/Andrei Ghiura/AppData/Roaming/Sublime Text 3/Packages/User/HTMLBeautify.sublime-settings",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/navbar.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/portfolio.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/modalLOL.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/modalCSGO.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/partials/leaderboard.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/templates/test1.html",
+		"/C/Users/Andrei Ghiura/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/facebook  login js.php",
+		"/C/Users/Andrei Ghiura/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/channel.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/facebookLogin.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/userService.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/app.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/js/controllers/mainCtrl.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/welcome.blade.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Controllers/ItemController.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Item.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_25_160936_create_items_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/config/view.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/views/index.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/templates/dirPagination.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/app/route.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/app/controllers/ItemController.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/app/helper/myHelper.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/app/packages/dirPagination.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/app/services/myService.js",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/templates/items.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/app.blade.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/resources/views/templates/home.html",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/app/Http/Controllers/UserAppController.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/public/New folder/index.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_24_140802_create_users_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_24_135117_create_users_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_24_134624_create_users_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_24_132438_create_users_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_24_131915_users.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2016_02_24_125440_create_users_table.php",
+		"/D/Facultate/xampp/htdocs/laravel/piracy/database/migrations/2014_10_12_000000_create_users_table.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+			"D:\\Facultate\\xampp\\htdocs\\laravel\\piracy\\public",
+			"",
+			"root"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"NewsSvc",
+			"QuestSvc",
+			"userapp/{id}",
+			"public",
+			"     \n",
+			"UserCtrl",
+			"myApp.controllers",
+			"angul",
+			"controller",
+			"ng-",
+			"routeProvider",
+			"init",
+			"update",
+			"myApp",
+			"controll",
+			"UserCtrl",
+			"controll",
+			"myApp",
+			"ng",
+			"myApp",
+			"UserCtrl",
+			"checkUser",
+			"ctrl",
+			"myApp",
+			"store",
+			";\n",
+			"            \n",
+			" $table->string('');",
+			"homes",
+			"('"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 28.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "local.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 394.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -6,7 +6,7 @@
                             <hr class="star-light">
                         </div>
                     </div>
-                    <div class="col-sm-12" id="inb4" style="text-align:center;">
+                    <div class="col-sm-12" id="inb4" ng-hide="logged" style="text-align:center;">
 
                         <h5>Please login using Facebook to start!</h5>
                         </br>
@@ -14,18 +14,18 @@
                         <kbd> These can not be changed except by contacting the admin!</kbd>
                     </div>
                     
-                    <div class="col-sm-12" id="profile" style="text-align:left;">
+                    <div class="col-sm-12" ng-show="logged" id="profile" style="text-align:left;">
                         <div id="profileData" class="col-sm-4">
-                            <div id="profilePic" ><img id="profilePic1" src={{img}} width="150" height="150" style="display:none;margin:auto;"></div>
+                            <div id="profilePic" ><img id="profilePic1" src={{img}} width="150" height="150" style="margin:auto;"></div>
                             
                             <div id="profileName" style="text-align:center;"><b>{{userCurent.name}}</b></div>
                         </div>
-                        <div id="profileDataId" class="col-sm-4 profileCell">
+                        <div id="profileDataId" ng-show="logged" class="col-sm-4 profileCell">
                             <div id="profileLolName"><b>Summoner name:</b>  <b class="rightData">{{userCurent.lol_name}}</b></div>
                             <div id="profileCsgoName"><b>Steam name:</b>  <b class="rightData">{{userCurent.steam_name}}</b></div>
                             <div id="profileHsName"><b>battle.net tag:</b>  <b class="rightData">{{userCurent.battlenet_name}}</b></div>
                         </div>
-                        <div id="profileDataPct" class="col-sm-4 profileCell">
+                        <div id="profileDataPct" ng-show="logged" class="col-sm-4 profileCell">
                             <div id="profileLolPct"><b>League of Legends score:</b>  <b class="rightData">{{userCurent.lol_pct}}</b></div>
                             <div id="profileCsgoPct"><b>Steam score:</b>  <b class="rightData">{{userCurent.steam_pct}}</b></div>
                             <div id="profileHsPct"><b>battle.net score:</b>  <b class="rightData">{{userCurent.battlenet_pct}}</b></div>
@@ -36,15 +36,15 @@
                     <div>
                         <div class="row">
                             
-                            <button type="button"  id="loginBtn" class="btn btn-info btn-block" ng-click="fbLogin()" >Login</button>
+                            <button type="button"  id="loginBtn" ng-hide="logged" class="btn btn-info btn-block" ng-click="fbLogin()" >Login</button>
                         </div>
-                        <div class="btn-group  btn-group-justified">
+                        <div class="btn-group  btn-group-justified" ng-show="logged">
                             
                             <div class="btn-group ">
-                                <button id="leaderboardBtn" style="display:none;" class="btn btn-info btn-sm-6 portfolio-link" href="#leaderboard" data-toggle="modal">Leaderboard</button>
+                                <button id="leaderboardBtn"  class="btn btn-info btn-sm-6 portfolio-link" href="#leaderboard" data-toggle="modal">Leaderboard</button>
                             </div>
                             <div class="btn-group ">
-                                <button type="button" id="logoutBtn" style="display:none;"class="btn btn-info btn-sm-6" ng-click="fbLogout();">Logout</button>
+                                <button type="button" id="logoutBtn" class="btn btn-info btn-sm-6" ng-click="fbLogout();">Logout</button>
                                 
                             </div>
                             

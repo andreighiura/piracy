@@ -1088,7 +1088,7 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #2c3e50;
+  color: #ffffff;
   background-color: #ffffff;
 }
 input,
@@ -1190,7 +1190,7 @@ h6,
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.1;
-  color: inherit;
+  
 }
 h1 small,
 h2 small,
@@ -6317,6 +6317,7 @@ button.close {
     transform: translate3d(100%, 0, 0);
     left: 0;
   }
+
   .carousel-inner > .item.prev,
   .carousel-inner > .item.active.left {
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -6326,6 +6327,7 @@ button.close {
   .carousel-inner > .item.next.left,
   .carousel-inner > .item.prev.right,
   .carousel-inner > .item.active {
+    margin:0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     left: 0;
@@ -6362,6 +6364,7 @@ button.close {
   left: 100%;
 }
 .carousel-control {
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -6383,6 +6386,7 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 .carousel-control.right {
+
   left: auto;
   right: 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -6396,6 +6400,7 @@ button.close {
 .carousel-control:focus {
   outline: 0;
   color: #ffffff;
+
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -6409,6 +6414,7 @@ button.close {
   margin-top: -10px;
   z-index: 5;
   display: inline-block;
+
 }
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
@@ -6464,14 +6470,14 @@ button.close {
 }
 .carousel-caption {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
+  left: 10%;
+  right: 30%;
+  bottom: 10%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .carousel-caption .btn {
